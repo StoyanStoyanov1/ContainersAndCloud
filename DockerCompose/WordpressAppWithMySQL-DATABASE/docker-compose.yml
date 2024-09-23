@@ -3,7 +3,7 @@ services:
     mysql:
         stdin_open: true
         tty: true
-        container_name: wordpress_db
+        container_name: stenly_db
         environment:
             - MYSQL_DATABASE=wordpressdb
             - MYSQL_ROOT_PASSWORD=wordpressdbpass
@@ -20,7 +20,7 @@ services:
     wordpress:
         stdin_open: true
         tty: true
-        container_name: wordpress_web
+        container_name: stenly_web
         environment:
             - WORDPRESS_DB_HOST=wordpress_db
             - WORDPRESS_DB_USER=wordpress
