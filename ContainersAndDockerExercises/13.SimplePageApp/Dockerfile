@@ -16,4 +16,4 @@ COPY static /app/staticfiles
 
 EXPOSE 8080
 
-CMD {"gunicorn", 'SimplePageApp.wsgi:application', '--bind', '0.0.0.0:8000'}
+CMD {"gunicorn", "SimplePageApp.wsgi:application", "--bind", "0.0.0.0:8000"}
